@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>E-MENU</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<a class="logo">
+				<img src="" alt="Logo" />
+			</a>
+			<label class="address">
+				<input type="text" class="input input-address" placeholder="Адрес доставки" />
+			</label>
+			<div class="buttons">
+				<span class="user-name"></span>
+
+				<button class="button button-cart" id="cart-button">
+					<span class="button-cart-svg"></span>
+					<span class="button-text">Корзина</span>
+				</button>
+				<button class="button button-primary button-out">
+					<span class="button-text">Выйти</span>
+					<span class="button-out-svg"></span>
+				</button>
+			</div>
+		</header>
+	</div>
+
+	<main class="main">
+		<div class="container">
+
+			<!-- <div class="swiper">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide">Slide 1</div>
+				  <div class="swiper-slide">Slide 2</div>
+				  <div class="swiper-slide">Slide 3</div>
+				  ...
+				</div>
+				<div class="swiper-pagination"></div>
+			  
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			  
+			  </div> -->
+
+			<section class="restaurants">
+				<div class="section-heading">
+					<h2 class="section-title">Рестораны</h2>
+					<label class="search">
+						<input type="text" class="input input-search" placeholder="Поиск блюд и ресторанов" />
+					</label>
+				</div>
+				<div class="cards cards-restaurants">
+
+				</div>
+			</section>
+			<section class="menu hide">
+				<div class="section-heading">
+					<!-- /.card-info -->
+				</div>
+				<div class="cards cards-menu">
+				</div>
+				<!-- /.cards -->
+			</section>
+
+		</div>
+		<!-- /.container -->
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-block">
+				<img src="" alt="logo" class="logo footer-logo" />
+				<nav class="footer-nav">
+					<a href="#" class="footer-link">Ресторанам </a>
+					<a href="#" class="footer-link">Курьерам</a>
+					<a href="#" class="footer-link">Пресс-центр</a>
+					<a href="#" class="footer-link">Контакты</a>
+				</nav>
+				<div class="social-links">
+					<a href="#" class="social-link"><img src="" alt="instagram" /></a>
+					<a href="#" class="social-link"><img src="" alt="facebook" /></a>
+					<a href="#" class="social-link"><img src="" alt="vk" /></a>
+				</div>
+				<!-- /.social-links -->
+			</div>
+			<!-- /.footer-block -->
+		</div>
+	</footer>
+
+	<div class="modal modal-cart">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<h3 class="modal-title">Корзина</h3>
+				<button class="close">&times;</button>
+			</div>
+			<!-- /.modal-header -->
+			<div class="modal-body">
+			</div>
+			<!-- /.modal-body -->
+			<div class="modal-footer">
+				<span class="modal-pricetag">0 ТГ</span>
+				<div class="footer-buttons">
+					<button class="button button-primary" id="take-order-btn">Оформить заказ</button>
+					<button class="button clear-cart">Очистить</button>
+				</div>
+			</div>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<div class="my-modal hide">
+		<div class="modal-wrapper"></div>
+		<div class="modal-content">
+			<div class="my-header">
+				<h2>Оформление заказа</h2>
+				<button class="close">&times;</button>	
+			</div>
+			<div class="my-body">
+				<form action="#" class="my-body-form">
+					<label>Ваше Имя<input type="text" required></label>
+					<label>Номер телефона<input type="tel" required></label>
+					<label>Примечение<input type="text"></label>
+					<input type="submit" id="takeOrder" value="Подтвердить">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="my-modal-empty hide">
+		<div class="modal-wrapper"></div>
+		<div class="modal-content">
+			<h1>Корзина пуста, прежде чем делать заказ, добавьте что-либо</h1>
+		</div>
+	</div>
+	<div class="my-modal-done hide">
+		<div class="modal-wrapper"></div>
+		<div class="modal-content">
+			<h1>Ваш заказ был отправлен оператору!<br>Ожидайте звонка</h1>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="./js/slider.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
